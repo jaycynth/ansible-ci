@@ -1,0 +1,18 @@
+How GitHub Actions Acts as the Ansible Controller
+
+When you use GitHub Actions to run Ansible playbooks:
+
+GitHub Runner: GitHub Actions uses runners, which are virtual machines or containers, to execute workflows. These runners temporarily become your Ansible controller.
+
+Workflow Execution: Your workflow file (e.g., ci-cd.yml) defines the steps that the runner will perform, including checking out the repository, installing Ansible, and running Ansible playbooks.
+
+SSH Access: The runner connects to your managed nodes (e.g., your web servers) over SSH to apply configurations and deployments defined in the playbooks.
+
+
+####################
+
+Checking out code in GitHub Actions refers to the process of retrieving the code from your GitHub repository to the runner's local environment so that the subsequent steps in your workflow can operate on the codebase
+
+##########################
+
+ - Ansible is used in deploying replicas of applications across multiple servers
